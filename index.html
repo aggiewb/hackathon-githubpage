@@ -11,7 +11,6 @@
             h1, h2 {
                 font-family: 'Poppins', sans-serif;
                 font-size: 45px;
-                text-align:center;
             }
 
             h1, h2, a {
@@ -24,13 +23,13 @@
                 font-size: 15px;
             }
 
-            p, ol {
+            p, ol, .navbar {
                 margin-left: auto;
                 margin-right: auto;
-                width: 40em;
+                width: 50em;
             }
 
-            div{
+            div, nav, h1, h2, .navbar{
                 text-align: center;
             }
             
@@ -48,25 +47,52 @@
             }
 
             ul {
+                margin-bottom: 5px;
                 list-style-type: circle;
             }
+
+            .navbar {
+                border: #e8c547 solid 3px;
+                padding: 10px;
+                position: sticky;
+                top: 0;
+                background-color: black;
+
+            }
+
+            .navbar li {
+                list-style-type: none;
+                display: inline;
+                padding: 5px;
+                font-size: 25px;
+                border-right: #e8c547 solid 3px;
+            }
+
 
         </style>
     </head>
     <body>
+        <ul class="navbar">
+            <li><a href="#whatis">Definition</a></li>
+            <li><a href="#whatexpect">Expectations</a></li>
+            <li><a href="#whyimportant">Importance</a></li>
+            <li><a href="#wherefind">Locations</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#howhost">Hosting</a></li>
+        </ul>
         
         <div>
             <img src="hackathon_icon.jpg" alt="A man jumping over a hurdle with a label of hackathon">
         </div>
         
-        <h1>What is a Hackathon?</h1>
+        <h1 id="whatis">What is a Hackathon?</h1>
         <p>A hack is a way to cut with rough or heavy blows. In this same sense, a hackathon involves finding a rough solution to an idea over a short period of time. The lack of perfection helps people experiment with ideas and tools they might not have otherwise in a more restricted environment.</p>
         
         <p>During the event, people come together to problem-solve or work on a particular task. They typically often involve computers; however, programming is not necessary to participate since they involve people in various different areas of expertise in a team to solve a problem.</p>
 
         <p>Some hackathons are competitive in nature and involve prize money or job offers. Others are for charity and help non-profit and not-for-profit groups achieve a goal involving a social issue. They can even be coordinated by a group of friends to build a tool around personal interests!</p>
 
-        <h2>What to Expect at a Hackathon</h2>
+        <h2 id="whatexpect">What to Expect at a Hackathon</h2>
         <p>Hackathons generally last anywhere from from a night to a weekend. They can also include food and social events! Here’s the general layout of what you can expect:</p>
 
         <ol>
@@ -82,11 +108,11 @@
             <img src="hackathon_infomatic.png" alt="An infographic hackathon layout">
         </div>
         
-        <h2>Why they are important</h2>
+        <h2 id="whyimportant">Why they are important</h2>
         
         <p>As developers, we are natural lifelong learners. This learning is nourished by collaborations with other people to find new ways to solve tasks.Hackathons are great to learn by meeting people, discovering new technologies, and challenging yourself!</p>
     
-        <h2>Where to find them</h2>
+        <h2 id="wherefind">Where to find them</h2>
 
         <ul>
             <li><a href="https://dubhacks.co/faq">DubHacks</a>: This one is held by UW for free for students once a year. While it does have developers working on projects, anyone can join as long as you have an interest in technology. You’re then placed on different teams based on three tracks, classic, data, and community, to accomplish corporate sponsored challenges tied to social issues.</li>
@@ -118,14 +144,14 @@
             </li>
         </ul>
 
-        <h2>History of the Hackathon</h2>
+        <h2 id="history">History of the Hackathon</h2>
         <p>Hackathons are considered having their roots in early computer hobbyist groups where a bunch of home developers would get together and work out code together. This was seen as far more advantageous for improvement than lectures or being “told” how to fix something. However, due to the variety of dissimilar computers available at the time, it was difficult to get larger groups together to work on the same thing. That is, until IBM came out as the dominant computing system (and Apple its only competitor). Having only two competing systems meant that devs were more likely to be working on the same core. It was at this time that the home groups started to die off.</p>
         
         <p>In 1999 hackathons were born. Both as an open source event (where open-source software OpenBSD invited people to come work on its code for a weekend) and as a corporate event (Sun, makers of the Palm Pilot inviting devs to a weekend competition to make the best app for its Palm V). These early hackathons were not geared towards starting new companies, but rather bringing a bunch of devs together to work on problems and network.</p>
         
         <p>Later hackathons started branching off of this original day with focuses on apps, startups, or even non-tech topics like music or history. Student hackathons also started to pop up, and today (as of 2014) some believe that most hackathons are geared towards students or new coders and suggest that if organizers want higher participation in non-student events, they should focus less on prestige and prizes, and more on the networking and skill growth.</p>
 
-        <h2>How to Host a Hackathon</h2>
+        <h2 id="howhost">How to Host a Hackathon</h2>
         <ol>
             <li>Basic Necessities
                 <ul>

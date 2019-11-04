@@ -1,263 +1,252 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> Hackathons </title>
-		<style>
-		
-			body {
+    <head>
+        <title>Hackathons</title>
+        <style>
+
+            body {
                 background-color:#30323d;
             }
 
-            h1 {
+            h1, h2 {
                 font-family: 'Poppins', sans-serif;
                 font-size: 45px;
-				font-size: 4.4vw;
-                color:#e8c547;
-                text-align:center;
-				margin-top: 1em;
             }
-			
-			h2 {
-                font-family: 'Poppins', sans-serif;
-                font-size: 35px;
-				font-size: 3.0vw;
-                color:#e8c547;
-                text-align:center;
-            }
-			
 
-            p {
+            h1, h2, a {
+                color:#e8c547;
+            }
+
+            p, ol, li{
                 font-family: 'Open Sans', sans-serif;
                 color:#cdd1c4;
-                font-size: 17px;
-				font-size: 2vmin;
-				margin-top: 1em;
-				margin-bottom: 1em;
-				margin-right: 3em;
-				margin-left: 3em;
-				max-width: 80%;
-                
+                font-size: 15px;
             }
-			
-			ol {
-                font-family: 'Open Sans', sans-serif;
-                color:#cdd1c4;
-                font-size: 17px;
-				font-size: 2vmin;
-				margin-top: 1em;
-				margin-bottom: 2em;
-				margin-right: 3em;
-				margin-left: 3em;
-				max-width: 80%;
+
+            p, ol, .navbar, ul {
+                margin-left: auto;
+                margin-right: auto;
+                width: 50em;
             }
-			ul.a{
-				font-family: 'Open Sans', sans-serif;
-                color:#cdd1c4;
-                font-size: 17px;
-				font-size: 2vmin;
-				margin-top: 1em;
-				margin-bottom: 2em;
-				margin-right: 3em;
-				margin-left: 3em;
-				max-width: 80%;
-				list-style-type: circle;
-			}
-			ul.b{
-				font-family: 'Open Sans', sans-serif;
-                color:#cdd1c4;
-                font-size: 17px;
-				font-size: 2vmin;
-				margin-top: 1em;
-				margin-bottom: 2em;
-				margin-right: 2em;
-				margin-left: 1em;
-				max-width: 80%;
-			}
-			
+
+            div, nav, h1, h2, .navbar{
+                text-align: center;
+            }
+            
+            img {
+                max-width: 30%;
+                height: auto;
+                margin: 20px;
+                border: 5px solid #e8c547;
+                border-radius: 4px;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
 			a:link{
-				text-decoration: none;
+				text-decoration:none;
 				color: #e8c547;
 			}
 			a:visited{
 				text-decoration: none;
 				color: white;
 			}
-			a:hover{
+            a:hover {
 				text-decoration: underline;
-			}
+                color: blue;
+            }
+
+            ul {
+                margin-bottom: 5px;
+                list-style-type: circle;
+            }
+
+            .navbar {
+                padding: 0;
+                background-color: #e8c547;
+				text-align: center;
+				overflow: hidden;
+				position: fixed; <!-- controls whether the navbar moves with the scroll -->
+				width: 100%
+
+            }
 			
-			ul.nav {
-				font-family: 'Open Sans', sans-serif;
-                color:#cdd1c4;
-                font-size: 17px;
-				font-size: 2vmin;
-				position: fixed;
+            .navbar li {
+                list-style-type: none;
+                display: inline-block;
+                font-size: 25px;
+				font-size: 3vmin; <!-- vmin allows the font size to scale as the screen changes -->
+				text-align: center;
+				float: left;
+				margin-bottom: 0;
+
+            }
+			
+			.navbar ul{
 				top: 0;
 				width: 100%;
-				list-style-type: none;
 				margin: 0;
-				padding: 0;
+				padding: 0:
 				overflow: hidden;
-				background-color: #e8c547
+				
 			}
-			li.nav {
-				float:left;
-			}
-			
-			li.nav a{
+<!-- the li a controls the links in the navbar and the li a:hover controls the action when the mouse hovers over the nav bar -->
+<!-- by having the padding 0 for the rest of the nav bar elements, you ensure that the entire box changes w/ the hover -->			
+			.navbar li a{
 				display: block;
 				color: black;
 				text-align: center;
-				padding: 14px 16px;
-				text-decoration:none;
+				text-decoration: none;
+				padding: 14px 12px;
 			}
 			
-			li.nav a:hover {
-				background-color: white;
-			}
-			
-			img.top {
-				border: 2px solid #e8c547;
-				border-radius: 4px;
-				padding: 5px;
-				margin-top: 5%;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-
-			}
-			
-			img.left{
-				border: 2px solid #e8c547;
-				border-radius: 4px;
-				padding: 5px;
-				margin-left: 2em;
-				margin-right: 2em;
-
+			.navbar li a:hover{
+				background: white;
 			}
 
-            div{
-                text-align: center;
-				max-width: 800px;
-				
-            }
-			
-		</style>
-	</head>
-<body>
-<ul class="nav">
-	<li class ="nav"><a href="#whatahackathonis">Home</a></li>
-	<li class ="nav"><a href="#whattoexpectatahackathon">What to Expect</a></li>
-	<li class ="nav"><a href="#whytheyareimportant">Importance</a></li>
-	<li class ="nav"><a href="#wheretofindthem">Where to Find</a></li>
-	<li class ="nav"><a href="#historyofthehackathon">History</a></li>
-	<li class ="nav"><a href="#howtohostahackathon">How to Host</a></li>
-</ul>
 
-<img src="hackathon_icon.jpg" alt="Hackathon Hurdle" style="width: 20%;" class="top">
-<h1 id="whatahackathonis">What a Hackathon is:</h1>
+        </style>
+    </head>
+    <body>
+        <ul class="navbar">
+            <li><a href="#whatis">Definition</a></li>
+            <li><a href="#whatexpect">Expectations</a></li>
+            <li><a href="#whyimportant">Importance</a></li>
+            <li><a href="#wherefind">Locations</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#howhost">Hosting</a></li>
+        </ul>
+        
+        <div>
+            <img src="hackathon_icon.jpg" alt="A man jumping over a hurdle with a label of hackathon">
+        </div>
+        
+        <h1 id="whatis">What is a Hackathon?</h1>
+        <p>A hack is a way to cut with rough or heavy blows. In this same sense, a hackathon involves finding a rough solution to an idea over a short period of time. The lack of perfection helps people experiment with ideas and tools they might not have otherwise in a more restricted environment.</p>
+        
+        <p>During the event, people come together to problem-solve or work on a particular task. They typically often involve computers; however, programming is not necessary to participate since they involve people in various different areas of expertise in a team to solve a problem.</p>
 
-	<p>A hack is a way to cut with rough or heavy blows. In this same sense, a hackathon involves finding a rough solution to an idea over a short period of time. The lack of perfection helps people experiment with ideas and tools they might not have otherwise in a more restricted environment.</p>
+        <p>Some hackathons are competitive in nature and involve prize money or job offers. Others are for charity and help non-profit and not-for-profit groups achieve a goal involving a social issue. They can even be coordinated by a group of friends to build a tool around personal interests!</p>
 
-	<p>During the event, people come together to problem-solve or work on a particular task. They typically often involve computers; however, programming is not necessary to participate since they involve people in various different areas of expertise in a team to solve a problem. </p>
+        <h2 id="whatexpect">What to Expect at a Hackathon</h2>
+        
+        <div>
+        <img src="Cat_Conference_White.gif" alt="A group of cats working at a conference table on a project">
+        </div>
 
-	<p>Some hackathons are competitive in nature and involve prize money or job offers. Others are for charity and help non-profit and not-for-profit groups achieve a goal involving a social issue. They can even be coordinated by a group of friends to build a tool around personal interests! </p>
+        <p>Hackathons generally last anywhere from from a night to a weekend. They can also include food and social events! Here’s the general layout of what you can expect:</p>
 
-<h1 id="whattoexpectatahackathon">What to expect at a Hackathon:</h1>
-<img class ="left" src="Cat_Conference_White.gif" alt="Hackathon Group" style="float:left;width:15%;">
-	<p>Hackathons generally last anywhere from from a night to a weekend. They can also include food and social events! Here’s the general layout of what you can expect:</p>
+        <ol>
+            <li>Registration</li>
+            <li>Project pitches</li>
+            <li>Introductions</li>
+            <li>Networking and formation of teams</li>
+            <li>Work</li>
+            <li>Presentation of projects</li>
+        </ol>
+        
+        <div>
+            <img src="Cat_Teacher_White.gif" alt="A cat teaching programming concepts in front of a white board">
+        </div>
+        
+        <h2 id="whyimportant">Why they are important</h2>
+        
+        <p>As developers, we are natural lifelong learners. This learning is nourished by collaborations with other people to find new ways to solve tasks.Hackathons are great to learn by meeting people, discovering new technologies, and challenging yourself!</p>
+    
+        <h2 id="wherefind">Where to find them</h2>
 
-		<ol>
-			<li>Registration</li>
-			<li>Project pitches</li>
-			<li>Introductions</li>
-			<li>Networking and formation of teams</li>
-			<li>Work </li>
-			<li>Presentation of projects</li>
-		</ol>
+        <ul>
+            <li><a href="https://dubhacks.co/faq">DubHacks</a>: This one is held by UW for free for students once a year. While it does have developers working on projects, anyone can join as long as you have an interest in technology. You’re then placed on different teams based on three tracks, classic, data, and community, to accomplish corporate sponsored challenges tied to social issues.</li>
+            
+            <li><a href="https://www.eventbrite.com/e/hack-to-give-thanks-tickets-73598435903?aff=ebdssbdestsearch">Hack to Give Thanks</a>: This one is held once a year at CodeFellows for free (this year on Nov 23rd). It focuses on projects from <a href="https://www.democracylab.org/index/?section=FindProjects&showSplash=1">DemocracyLab</a>, which is a nonprofit organization that has many projects to help use technology to advance the public good. Projects will need coders, designers, researchers, project managers, subject matter experts, test users, and just ordinary people.</li>
+            
+            <li><a href="https://startupweekend.org/">Startup Weekend</a>: This is an event in partnership with the not-for-profit organization Google for Startups all year all over the world aimed at growing a business idea with a team over 54 hours. There are a few events during StartUp Weekend in Seattle and Portland. It’s $50 with a student discount and can include developers along with other experts from various fields.
+                
+                <ul>
+                <li><a href="http://communities.techstars.com/usa/seattle/startup-weekend/14702">Techstars Startup Weekend Seattle: Space Edition</a></li>
+                <li><a href="http://communities.techstars.com/usa/portland/startup-weekend/15107">Portland Start Weekend Latino - Latinx in Tech Edition</a></li>
+                </ul>
+            </li>
 
-<h1 id="whytheyareimportant">Why they are important:</h1>
-<img class ="left" src="Cat_Teacher_White.gif" alt="Cat Teaching" style="float:right;width:15%;">
+            <li><a href="https://www.codeday.org/">Code Day</a>: The even is a worldwide even for students to get together to build apps and games for 24 hours. Targeted towards beginners. The next one is on Nov 9-10.
+                <ul>
+                    <li><a href="https://www.codeday.org/bellevue">Code Day: Bellevue</a> Cost: $22 - Must be in high school or college. Age 25 or younger. Middle School Students can stay until 8pm.</li>
+                </ul>
+            </li>
 
-	<p>As developers, we are natural lifelong learners. This learning is nourished by collaborations with other people to find new ways to solve tasks. Hackathons are great to learn by meeting people, discovering new technologies, and challenging yourself!</p>
+            <li><a href="https://www.eventbrite.com/e/seattle-indies-game-jam-2019-tickets-72413910957">Seattle Indies Game Jam</a> : Hosted at the Pacific Science Center twice a year; team or solo work allowed. Create a game with a pre-selected theme as your guide. 48 hour event.. $20 suggested donation for participating. It is not a competition. All ages.</li>
 
-<h2 id="wheretofindthem">Where to find them:</h2>
+            <li>Some popular hackathon aggregates:
+                <ul>
+                    <li><a href="https://www.hackalist.org/">Hackalist</a>- an open source aggregate</li>
+                    <li><a href="https://mlh.io/">Major League Hacking</a>- an official student hackathon league</li>
+                    <li><a href="https://devpost.com/">Devpost</a>- for hackathons and projects</li>
+                </ul> 
+            </li>
+        </ul>
+        
+        <div>
+            <img src="hackathon_infomatic.png" alt="An infographic detailing a hackathon, idea, connect, solve, and present">
+        </div>
+        
+        <h2 id="history">History of the Hackathon</h2>
+        <p>Hackathons are considered having their roots in early computer hobbyist groups where a bunch of home developers would get together and work out code together. This was seen as far more advantageous for improvement than lectures or being “told” how to fix something. However, due to the variety of dissimilar computers available at the time, it was difficult to get larger groups together to work on the same thing. That is, until IBM came out as the dominant computing system (and Apple its only competitor). Having only two competing systems meant that devs were more likely to be working on the same core. It was at this time that the home groups started to die off.</p>
+        
+        <p>In 1999 hackathons were born. Both as an open source event (where open-source software OpenBSD invited people to come work on its code for a weekend) and as a corporate event (Sun, makers of the Palm Pilot inviting devs to a weekend competition to make the best app for its Palm V). These early hackathons were not geared towards starting new companies, but rather bringing a bunch of devs together to work on problems and network.</p>
+        
+        <p>Later hackathons started branching off of this original day with focuses on apps, startups, or even non-tech topics like music or history. Student hackathons also started to pop up, and today (as of 2014) some believe that most hackathons are geared towards students or new coders and suggest that if organizers want higher participation in non-student events, they should focus less on prestige and prizes, and more on the networking and skill growth.</p>
 
-	<ul class="a">
-		<li><a href="https://dubhacks.co/faq">DubHacks</a> : This one is held by UW for free for students once a year. While it does have developers working on projects, anyone can join as long as you have an interest in technology. You’re then placed on different teams based on three tracks, classic, data, and community, to accomplish corporate sponsored challenges tied to social issues.</li>
-		<li><a href="https://www.eventbrite.com/e/hack-to-give-thanks-tickets-73598435903?aff=ebdssbdestsearch">Hack to Give Thanks</a> : This one is held once a year at CodeFellows for free (this year on Nov 23rd). It focuses on projects from <a href="https://www.democracylab.org/index/?section=FindProjects&amp;showSplash=1">DemocracyLab</a>, which is a nonprofit organization that has many projects to help use technology to advance the public good. Projects will need coders, designers, researchers, project managers, subject matter experts, test users, and just ordinary people. </li>
-		<li><a href="https://startupweekend.org/">Startup Weekend</a> : This is an event in partnership with the not-for-profit organization Google for Startups all year all over the world aimed at growing a business idea with a team over 54 hours. There are a few events during StartUp Weekend in Seattle and Portland. It’s $50 with a student discount and can include developers along with other experts from various fields.
-			<ul class="b">
-				<li><a href="http://communities.techstars.com/usa/seattle/startup-weekend/14702">Techstars Startup Weekend Seattle: Space Edition</a></li>
-				<li><a href="http://communities.techstars.com/usa/portland/startup-weekend/15107">Portland Startup Weekend Latino - Latinx in Tech Edition</a></li>
-			</ul>
-		</li>
-		<li><a href="https://www.codeday.org/">Code Day</a> : The even is a worldwide even for students to get together to build apps and games for 24 hours. Targeted towards beginners. The next one is on Nov 9-10
-			<ul class = "b">
-				<li><a href="https://www.codeday.org/bellevue">Code Day: Bellevue</a> Cost: $22 - Must be in high school or college. Age 25 or younger. Middle School Students can stay until 8pm.</li>
-			</ul>
-		</li>
-		<li><a href="https://www.eventbrite.com/e/seattle-indies-game-jam-2019-tickets-72413910957">Seattle Indies Game Jam</a> - Hosted at the Pacific Science Center twice a year; team or solo work allowed. Create a game with a pre-selected theme as your guide. 48 hour event.. $20 suggested donation for participating. It is not a competition. All ages.</li>
-		<li>Some popular hackathon aggregates:
-			<ul class = "b">
-				<li><a href="https://www.hackalist.org/">Hackalist</a> - an open source aggregate</li>
-				<li><a href="https://mlh.io/">Major League Hacking</a> - an official student hackathon league</li>
-				<li><a href="https://devpost.com/">Devpost</a> - for hackathons and projects</li>
-			</ul>
-		</li>
-	</ul>
-<img class= "top" src="hackathon_infomatic.png" alt="An infographic hackathon layout">
-<h1 id="historyofthehackathon">History of the Hackathon</h1>
+        <div>
+            <img src="Cat_Megaphone_White.gif" alt="A cat shouting into a megaphone">
+        </div>
+        
+        <h2 id="howhost">How to Host a Hackathon</h2>
+        <ol>
+            <li>Basic Necessities
+                <ul>
+                    <li>Venue that's large enough that everyone can work in the same room.</li>
+                    <li>Wifi connection that can handle the traffic of attendees.</li>
+                    <li>Power for all computers needed</li>
+                    <li>People to attend</li>
+                </ul>
+            </li>
 
-	<p>Hackathons are considered having their roots in early computer hobbyist groups where a bunch of home developers would get together and work out code together. This was seen as far more advantageous for improvement than lectures or being “told” how to fix something. However, due to the variety of dissimilar computers available at the time, it was difficult to get larger groups together to work on the same thing. That is, until IBM came out as the dominant computing system (and Apple its only competitor). Having only two competing systems meant that devs were more likely to be working on the same core. It was at this time that the home groups started to die off.</p>
+            <li>One Large Room
+                <ul>
+                    <li>It's more motivating to be working with a bunch of other people. When isolated in smaller rooms, people can get stuck, discouraged, and leave.</li>
+                </ul>
+            </li>
 
-	<p>In 1999 hackathons were born. Both as an open source event (where open-source software OpenBSD invited people to come work on its code for a weekend) and as a corporate event (Sun, makers of the Palm Pilot inviting devs to a weekend competition to make the best app for its Palm V). These early hackathons were not geared towards starting new companies, but rather bringing a bunch of devs together to work on problems and network.</p>
+            <li>Invite People within your Transit Budget
+                <ul>
+                    <li>If you don't have a transit budget, be conscious of having an easy to access venue or invite people nearby.</li>
+                </ul>
+            </li>
 
-	<p>Later hackathons started branching off of this original day with focuses on apps, startups, or even non-tech topics like music or history. Student hackathons also started to pop up, and today (as of 2014) some believe that most hackathons are geared towards students or new coders and suggest that if organizers want higher participation in non-student events, they should focus less on prestige and prizes, and more on the networking and skill growth.</p>
+            <li>Engaging Mini-Events
+                <ul>
+                    <li>Having small challenges or events helps give people breaks and keep their energy and interest up.</li>
+                </ul>
+            </li>
 
-<h1 id="howtohostahackathon">How to Host a Hackathon</h1>
-<img class ="left" src="Cat_Megaphone_White.gif" alt="Cat Shouting" style="float:left;width:15%;">
-	<ol>
-		<li>Basic Necessities
-			<ul class = "b">
-				<li>Venue that's large enough that everyone can work in the same room.</li>
-				<li>Wifi connection that can handle the traffic of attendees.</li>
-				<li>Power for all computers needed</li>
-				<li>People to attend</li>
-			</ul>
-		</li>
+            <li>Good MC and Music
+                <ul>
+                     <li>A high-energy MC will help keep the activity and interest up. Good music will also help, and something like a group Spotify list helps ensure everyone will have a chance to pick music they like.</li>
+                </ul>
+            </li>
+    
+            <li>Engage Sponsors
+                <ul>
+                    <li>Being proactive and engaging sponsors might increase the interest in your event but also broaden the potential for learning and networking. Sponsors also can benefit from this networking/recruiting chance.</li>
+                </ul>
+            </li>
+        </ol>
 
-		<li>One Large Room
-			<ul class = "b">
-				<li>It's more motivating to be working with a bunch of other people. When isolated in smaller rooms, people can get stuck, discouraged, and leave.</li>
-			</ul>
-		</li>
-		<li>Invite People with in your Transit Budget
-
-			<ul class = "b">
-			<li>If you don't have a transit budget, be conscious of having an easy to access venue or invite people nearby.</li></ul>
-		</li>
-		<li>Engaging Mini-Events
-			<ul class = "b">
-				<li>Having small challenges or events helps give people breaks and keep their energy and interest up.</li>
-			</ul>
-		</li>
-		<li>Good MC and Music
-			<ul>
-				<li>A high-energy MC will help keep the activity and interest up. Good music will also help, and something like a group Spotify list helps ensure everyone will have a chance to pick music they like.</li>
-			</ul>
-		</li>
-		<li>Engage Sponsors
-			<ul class = "b">
-				<li>Being proactive and engaging sponsors might increase the interest in your event but also broaden the potential for learning and networking. Sponsors also can benefit from this networking/recruiting chance.</li>
-			</ul>
-		</li>
-</ol>
-
-<h2 id="moreonhowtohost">More on How to Host:</h2>
-	<ul class = "a">
-		<li><a href="https://news.mlh.io/how-to-throw-an-epic-hackathon-07-07-2014">How to throw an epic hackathon</a></li>
-		<li><a href="https://www.wikihow.com/Organize-a-Hackathon">Organize a Hackathon</a> </li>
-	</ul>
-</body>
+        <p>More on How to Host:</p>
+        <ul>
+            <li><a href="https://news.mlh.io/how-to-throw-an-epic-hackathon-07-07-2014">How to throw and epic hackathon</a></li>
+            <li><a href="https://www.wikihow.com/Organize-a-Hackathon">Organize a Hackathon</a></li>
+        </ul>
+    </body>
 </html>

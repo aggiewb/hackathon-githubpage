@@ -45,7 +45,18 @@
                 margin-bottom: 5px;
             }
 
+			a:link {
+				text-decoration:none;
+				color: #e8c547;
+			        }
+			      
+            a:visited {
+                text-decoration: none;
+                color: white;
+			}
+            
             a:hover {
+				text-decoration: underline;
                 color: blue;
             }
 
@@ -55,25 +66,50 @@
             }
 
             .navbar {
-                border: #e8c547 solid 3px;
-                padding: 10px;
-                position: sticky;
+                padding: 0;
+                background-color: #e8c547;
+				text-align: center;
+				overflow: hidden;
+				position: sticky; /* controls whether the navbar moves with the scroll */
                 top: 0;
-                background-color: black;
-
-            }
-
+				width: 100%;
+                color: #30323d;
+                }
+			
             .navbar li {
                 list-style-type: none;
-                display: inline;
-                padding: 5px;
+                display: inline-block;
                 font-size: 25px;
-                border-right: #e8c547 solid 3px;
+				font-size: 3vmin; /* vmin allows the font size to scale as the screen changes */
+				text-align: center;
+				margin-bottom: 0;
+
             }
-
-
+			
+			.navbar ul{
+				top: 0;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				
+			}
+/* the li a controls the links in the navbar and the li a:hover controls the action when the mouse hovers over the nav bar */
+/* by having the padding 0 for the rest of the nav bar elements, you ensure that the entire box changes w/ the hover */			
+			.navbar li a{
+				display: block;
+				color: black;
+				text-align: center;
+				text-decoration: none;
+				padding: 14px 12px;
+			}
+			
+			.navbar li a:hover{
+				background: white;
+			}
         </style>
     </head>
+    
     <body>
         <ul class="navbar">
             <li><a href="#whatis">Definition</a></li>
